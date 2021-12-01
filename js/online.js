@@ -200,7 +200,7 @@
 		}
 	}
 	function deleteMsgPost(){
-		if (answer === 2) {
+		if (answer === 1) {
 			if (game.role==="admin" || game.role ==="mod"){
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
@@ -230,7 +230,7 @@
 		}
 	}
 	function banUserPost(){
-		if (answer === 2) {
+		if (answer === 1) {
 			if (game.role==="admin" || game.role ==="mod"){
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {

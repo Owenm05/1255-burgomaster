@@ -5,12 +5,13 @@ userAnswer = 0;
 function myCanvas(imageName, thefunction, sceneText, answerTextOne,answerTextTwo) {
     var ctx = canvas.getContext("2d");
     mystyle = 'position: absolute; left: 20px; top: 100px;';
-    document.getElementById("myDCanvas").style=mystyle+' border:1px solid black; z-index:99';
+    document.getElementById("myDCanvas").classList.add('active-modal');
     userAnswer    = 0;
     img1sizeX     = 0;
     img1sizeY     = 0;
     imageOffsetX  = 10;
     imageOffsetY  = 30;
+    console.log(thefunction);
     if (imageName !== '') {
         var src   = imageName;
         img1      = loadImage(src, composite);
@@ -54,7 +55,7 @@ function myCanvas(imageName, thefunction, sceneText, answerTextOne,answerTextTwo
         if (sceneTextLength === 1) {
           sceneTextOrLength  = sceneText.length;
           //console.log("dialog text len is "+sceneTextLength);
-          nextLine = sceneText.lastIndexOf(" ", 80) 
+          nextLine = sceneText.lastIndexOf(" ", 80)
         }
         sceneLines        = 0;
         sceneOffsetX      = img1sizeX + 20;
@@ -124,7 +125,7 @@ function tap (e) {
     if (loc.x >= buttonOneOffsetX && loc.x <= buttonOneOffsetX+buttonOneLength) {
         if (loc.y >= buttonsOffsetY && loc.y <= buttonsOffsetY+20) {
             console.log("first button pressed");
-            document.getElementById("myDCanvas").style=mystyle+' border:0px; z-index:-2;  visible:none';
+            document.getElementById("myDCanvas").classList.remove('active-modal');
             answer = 2;
             clearCanvas();
         }
@@ -132,7 +133,7 @@ function tap (e) {
     if (loc.x >= buttonTwoOffsetX && loc.x <= buttonTwoOffsetX+buttonTwoLength) {
         if (loc.y >= buttonsOffsetY && loc.y <= buttonsOffsetY+20) {
             console.log("second button pressed");
-            document.getElementById("myDCanvas").style=mystyle+'z-index:-2';
+            document.getElementById("myDCanvas").classList.remove('active-modal');
             answer = 3;
             clearCanvas();
         }

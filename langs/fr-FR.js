@@ -2,34 +2,34 @@ var localeStrings = [];
 localeStrings.push("placeholder");
 localeStrings.push("placeholder");
 localeStrings.push("placeholder");
-localeStrings.push("Construisez ou améliorez votre Trésorerie.");
-localeStrings.push("Votre richesse augmente.");
-localeStrings.push("Votre richesse diminue.");//5
-localeStrings.push("Votre richesse reste inchangée.");
-localeStrings.push("La population augmente.");
-localeStrings.push("La population diminue.");
-localeStrings.push("La population reste inchangée.");
-localeStrings.push("Votre cité a atteint sa limite de population. Construisez de nouvelles maisons ou améliorez celles qui existent.");//10
-localeStrings.push("Sauvegarde réussie.");
-localeStrings.push("Chargement réussi.");
-localeStrings.push("Voulez-vous charger une partie ? Tout changement non sauvegardé sera perdu.");
-localeStrings.push("Désolé, vous n'avez aucune sauvegarde.");
-localeStrings.push("Voulez-vous sauvegarder ? La sauvegarde précédente sera ecrasée.");//15
-localeStrings.push("Veuillez insérer la ligne de caractères composant la sauvegarde.");
-localeStrings.push("Une très longue chaine de caractères");
-localeStrings.push("Voulez-vous embaucher un garde ? Il vous en coutera %arg1 or puis %arg2 or par saison.");
-localeStrings.push("Vous avez embauché un garde.");
-localeStrings.push("Vous n'avez pas assez d'or pour faire ça.");//20
-localeStrings.push("Une Trésorerie est requise pour embaucher un garde.");
-localeStrings.push("Voulez-vous licencier un garde ?");
-localeStrings.push("Vous avez licencié un garde.");
-localeStrings.push("Vous n'avez aucun garde.");
-localeStrings.push("traitrise");//25
-localeStrings.push("espionnage");
-localeStrings.push("corruption");
-localeStrings.push("corruption");
-localeStrings.push("détournement de fonds");
-localeStrings.push("vol");//30
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");//5
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");//10
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");//15
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");//20
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");//25
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");
+localeStrings.push("placeholder");//30
 localeStrings.push("Assurément, de la façon la plus barbare!");
 localeStrings.push("Oui");
 localeStrings.push("Non");
@@ -134,6 +134,7 @@ localeStrings.push("<h1>1255 Burgomaster</h1>" +
     "<h2>Comment jouer</h2>" +
     "Ce jeu se joue en tours. Une horloge décompte un tour toutes les 30 secondes.<br>" +
     "A la fin de chaque tour votre population paye des impôts and s'agrandit.<br>" +
+    "feedback <a href='https://docs.google.com/forms/d/e/1FAIpQLSdM9HyQVEdW39Mc2-t8_LNFXUlyMZLhvX0jx_uvrzxF7QnmfQ/viewform'>feedback form</a><br>" +
     "Normalement, chaque citoyen vous paye un or par tour.<br>" +
     "Ce comportement vient à changer en fonction de vos choix.<br>" +
     "Vous devez construire des Maisons pour poursuivre la croissance de votre population.<br>" +
@@ -414,6 +415,7 @@ locObj.welcome0 = {"txt":"Bonjour nouveau joueur et bienvenue dans mon jeux", "l
 locObj.welcome1 = {"txt":"Ta mission est simple - gérer cette cité en tant que maire.", "loc":"same"};
 locObj.welcome2 = {"txt":"Les citoyens payent des impôts chaque saison (30 sec.) et la population grandit chaque saison", "loc":"same"};
 locObj.okay = {"txt":"OK", "loc":"Mostly used in information dialogues"}
+locObj.skipTutorial = {"txt": "Je n'ai pas besoin de conseils!", "loc": "Dont show tutorial messages"};
 
 locObj.tutorial0_w0 = {"txt":"Votre oncle, le maître foncier de l'ordre teutonique,\nvous a envoyé construire une ville sur la frontière païenne.\nVous avez trouvé un endroit convenable avec une colline, une rivière, une forêt.\nVos paysans ont déjà dégagé l'endroit et prêt à construire", "loc":"tutorial0_w0"};
 locObj.tutorial1_pop0 = {"txt":"Monseigneur Commandeur, vous devez construire des maisons\npour maintenir la croissance de votre population", "loc":"tutorial0_w0"};
@@ -424,12 +426,14 @@ locObj.tutorial_stash = {"txt":"Monseigneur Commandeur, des voleurs ont volé l'
 locObj.tutorial_stable = {"txt":"Monseigneur Commandeur, maintenant vous pouvez construire des écuries\nLes écuries vous permettront d'embaucher des sergents et des chevaliers ", "loc":"tutorial msg when reached 50 pop"};
 locObj.tutorial_archery = {"txt":"Monseigneur Commandeur, maintenant vous pouvez construire un champ de tir à l'arc\nLe stand de tir à l'arc vous permettra de louer des turkopols dans les écuries", "loc":"tutorial msg when reached 70 pop"};
 locObj.tutorial_inn = {"txt":"Monseigneur Commandeur, maintenant vous pouvez construire\nL'Auberge vous permettra d'embaucher un héros", "loc":"tutorial msg when reached 100 pop"};
-locObj.tutorial_catastrophe = {"txt":"Vos forces ont capturé une sorcière. Le procès a été rapide et court\nPendant que les gens se rassemblaient pour regarder l'exécution,\nelle a commencé à chanter. Quand les flammes léchaient ses pieds nus, elle hurlait\nEn ce moment même, de nulle part a frappé un éclair avec \nune puissance titanesque. En plein centre du feu ... ", "loc":"tutorial msg catastrophe"};
 locObj.tutorial_social = {"txt":"Monseigneur Commandeur, maintenant vous pouvez construire potence ou fontaine\nLes deux ont leurs propres bonus passifs et actifs", "loc":"tutorial msg when reached 120 pop"};
 locObj.tutorial_firebrigade = {"txt":"Monseigneur Commandeur, vous pouvez engager un pompier en cliquant sur le puits\nLes pompiers finiront par éteindre le feu\nL'entretien des pompiers dépend du nombre de bâtiments\nque vous avez construits et modernisés", "loc":"tutorial msg when fire, pop>50, year>1260"};
-locObj.tutorial_two_steps = {"txt":"You saw a few peasants, running from ugly monsters you have never seen\nYou killed monsters and asked peasants what happened\nThey told you that trolls were mad because they don't paid for passing by...", "loc":"tutorial. when you step 2 times from city"};
 locObj.tutorial_autosave = {"txt":"Sir Commander, you should consider to enable autosave in Settings", "loc":"tutorial. Triggered by 10 first ticks"};
 locObj.tutorial_moving_troops = {"txt":"Sir Commander, buttons near the number of units allow you to manage units\nSingle arrow moves a unit, double arrow moves a stack,\nX button fires a unit, XX button fires a stack", "loc":"triggered by first enter into Hiring tab"};
+locObj.tutorial_new_buildings = {"txt":"New buildings will unlock as your population grows","loc":"tutorial"}
+
+locObj.story1_catastrophe = {"txt":"Vos forces ont capturé une sorcière. Le procès a été rapide et court\nPendant que les gens se rassemblaient pour regarder l'exécution,\nelle a commencé à chanter. Quand les flammes léchaient ses pieds nus, elle hurlait\nEn ce moment même, de nulle part a frappé un éclair avec \nune puissance titanesque. En plein centre du feu ... ", "loc":"tutorial msg catastrophe"};
+locObj.story2_two_steps = {"txt":"You saw a few peasants, running from ugly monsters you have never seen\nYou killed monsters and asked peasants what happened\nThey told you that trolls were mad because they don't paid for passing by...", "loc":"tutorial. when you step 2 times from city"};
 
 
 locObj.unit_sergeants = {"txt": "Sergeants", "loc": "Autbattle log, player unit"};
@@ -438,8 +442,9 @@ locObj.unit_knights = {"txt": "Brother-knights", "loc": "Autbattle log, player u
 
 locObj.unit_bandit = {"txt": "Bandits", "loc": "Autbattle log, enemy unit"};
 locObj.unit_bandit_archer = {"txt": "Bandits archers", "loc": "Autbattle log, enemy unit"};
-locObj.unit_merc_swordman = {"txt": "Mercenary swordman", "loc": "Autbattle log, highlevel enemy unit"};
-locObj.unit_merc_spearman = {"txt": "Mercenary spearman", "loc": "Autbattle log, highlevel enemy unit"};
+locObj.unit_merc_swordman = {"txt": "Mercenary swordmen", "loc": "Autbattle log, highlevel enemy unit"};
+locObj.unit_merc_spearman = {"txt": "Mercenary spearmen", "loc": "Autbattle log, highlevel enemy unit"};
+locObj.unit_goblin = {"txt": "Goblins", "loc": "Autbattle log, enemy unit"};
 
 locObj.autobattle_journal_btn = {"txt": "Battle journal", "loc": "Inn window. Battle report by round moves"};
 locObj.autobattle_journal_log_start = {"txt": "Round started", "loc": "Start round title"};
@@ -452,6 +457,9 @@ locObj.advmap = {"txt":"Pour déplacer votre héros, utilisez les boutons fléch
 locObj.plague_turk = {"txt":"Sur le bord: votre turkopol a repéré une personne peste et lui a tiré dessus. Le cadavre a été brûlé après", "loc":"Random event. Plague. A turkopol prevents plague in the city"};
 locObj.plague_army = {"txt":"Un événement fâcheux vient de se produire : l'épidémie de peste a été stoppée par votre garnison, mais a tué %arg1 de vos troupes en garnison", "loc":"Your army prevents plague in the city. Some soldiers are dead now"};
 locObj.plague = {"txt":"Un événement fâcheux vient de se produire : la peste a tué %arg1 citoyens.", "loc":"default plague case + case where army failed to prevent outbreak"};
+locObj.new_adepts = {"txt":"People had heard that any new christian gets gifts from the Church. And so they came: %arg1","loc":"migration event case 1"};
+locObj.people_arrive = {"txt":"People had heard that you are kind ruler. And so they came: %arg1","loc":"migration event case 2"};
+locObj.people_leave = {"txt":"People left you, because of your cruelty. Left: %arg1","loc":"migration event case 3"};
 locObj.city_chest_gold = {"txt":"Vous avez trouvé %arg1 pièces d'or dans un coffre! ", "loc":"Random event. Opened a short-living chest in city screen"};
 locObj.blackmarket_dstr = {"txt":"Un grand gobelin vert au gros ventre, qui s'appelait Elbenkonig,\n  vous a offert une variété d'artefacts magiques.\nVous, en tant que vrai chrétien, frère de l'ordre teutonique, vous en avez été offensé.\nVotre première intention était de tuer le gobelin et de brûler le marché.\nD'un autre côté, des artefacts magiques pourraient s'avérer utiles dans ce monde.\nQue ferez-vous?", "loc":"This dialogue happens every time you first visit blackmarket on the newly generated map"};
 locObj.blackmarket_dstr_brn = {"txt":"Tuez le gobelin et brûlez le marché noir!", "loc":"Destroying the blackmarket"};
@@ -488,3 +496,43 @@ locObj.glyphMonkDesc = {"txt": "Increases the hero's attack +4, increases heroe'
 
 locObj.goldRuneTitle = {"txt": "Rune of Golden Search", "loc": "Имя глифа"};
 locObj.goldRuneDesc = {"txt": "Increases the hero's gold reward after battle by 7%.", "loc": "Glyph desc"};
+locObj.advmapHeroLose = {"txt": "Your troops were defeated and the hero is forced to retreat to the city.", "loc":"When hero loses battle on advmap"}
+
+locObj.eventHalloween = {"txt": "Halloween is about collecting pumpkins!\nGenerate a new adventure map to find them\nYou need to be registered & logged, so you pledge could be recorded", "loc":"help"}
+locObj.eventNewYear   = {"txt": "New Year is about collecting snowmen!\nGenerate a new adventure map to find them\nYou need to be registered & logged, so you pledge could be recorded", "loc":"eventhelp"}
+locObj.couldntRecordPledge = {"txt": "It seems you are not logged it. Your pledge will not be recorded","loc":"happens when collected event item while being not logged in"}
+
+locObj.deadCounselorDemolish = {"txt":"Your counselor is dead.\nThe new counselor, however, urges us to reconsider\nthe choice which was made with the previous one:\n-it's time, m'lord, when we could decide what's better for our nation.\n-if you agree, we demolish the %arg1 and thus you could build %arg2", "loc":""}
+locObj.deadCounselorDemolishAnsYes = {"txt":"Yes, demolish it", "loc":"Positive answer"}
+locObj.buy  = {"txt":"Buy",  "loc":"On item in BlackMarket for sale from Goblin"};
+locObj.sell = {"txt":"Sell", "loc":"On item in BlackMarket for sale from Hero"};
+locObj.buildArchery = {"txt":"Archery provides mounted archers. Build stables first", "loc":"error msg bulding archery"};
+locObj.buildUpgradeTreasury = {"txt":"Construisez ou améliorez votre Trésorerie", "loc":"the endturn tip in case of overflowing gold amount"}
+locObj.moneyIncreased = {"txt":"Votre richesse augmente", "loc":"happens when s-to-s money value increased"};
+locObj.moneyDecreased = {"txt":"Votre richesse diminue", "loc":"happens when s-to-s money value decreased"};
+locObj.popIncreased = {"txt":"La population augmente", "loc":"happens when s-to-s population value increased"};
+locObj.popDecreased = {"txt":"La population diminue", "loc":"happens when s-to-s population value decreased"};
+locObj.buildUpgradeHouse = {"txt":"Votre cité a atteint sa limite de population. Construisez de nouvelles maisons ou améliorez celles qui existent", "loc":"the endturn tip in case of overpopulating"};
+locObj.savedSuccessfully = {"txt":"Sauvegarde réussie", "loc":"when manual save completed successfully"};
+locObj.loadedSuccessfully = {"txt":"Chargement réussi", "loc":"when loaded completed successfully"};
+locObj.dialogLoadGame = {"txt":"Voulez-vous charger une partie ? Tout changement non sauvegardé sera perdu", "loc":"confirmation dialogue over loading game"};
+locObj.noSaveGame = {"txt":"Désolé, vous n'avez aucune sauvegarde", "loc":"in case there is no savegame"};
+locObj.dialogSaveGame = {"txt":"Voulez-vous sauvegarder ? La sauvegarde précédente sera ecrasée", "loc":"when trying to save game or overwriting existing savegame"};
+locObj.loadGameFromStringError = {"txt":"Veuillez insérer la ligne de caractères composant la sauvegarde", "loc":"happens when the loadgame input is empty"};
+locObj.lblLongSaveString = {"txt":"Une très longue chaine de caractères", "loc":"label near input fielf for savegame string"};
+locObj.dialogConfirmHireGuard = {"txt":"Voulez-vous embaucher un garde ? Il vous en coutera %arg1 or puis %arg2 or par saison", "loc":"hiring treasury guard confirmation dialogue"};
+locObj.hiredGuardsman = {"txt":"Vous avez embauché un garde", "loc":"after succesfully hired a guardsman"};
+locObj.notEnoughGold = {"txt":"Vous n'avez pas assez d'or pour faire ça", "loc":"not enough gold"};
+locObj.treasuryRequired = {"txt":"Une Trésorerie est requise pour embaucher un garde", "loc":"happens when trying to hire gaurdsman without a treasury"};
+locObj.dialogConfirmDismssGuardsman = {"txt":"Voulez-vous licencier un garde ?", "loc":"happens when try to dismiss one guardsman"};
+locObj.dismissedGuardsman = {"txt":"Vous avez licencié un garde.", "loc":"happens after dismissing a guardsman"}; 
+locObj.noGuardsman = {"txt":"Vous n'avez aucun garde", "loc":"happens when trying to dismiss guardsman when there are none of them"};
+locObj.execReasons = [{"txt":"traitrise", "loc":"when executing a person"},
+	{"txt":"espionnage", "loc":""},
+	{"txt":"corruption", "loc":""},
+	{"txt":"corruption", "loc":""},
+	{"txt":"détournement de fonds", "loc":""},
+	{"txt":"vol", "loc":""}];
+locObj.techArtilleryResearched = {"txt":"You researched the artillery technology!", "loc":"Happens when the tech is discovered"};
+locObj.bldUniversityHelp = {"txt":"This building is required to research new technologies", "loc":"User saw this when moving the coursor above the university icon in Building tab"};
+locObj.bldUniversityButton = {"txt":"Build university<br>%arg2 gold", "loc":"the label of the button of building the University on the building tab"};

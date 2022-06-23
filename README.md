@@ -28,9 +28,9 @@
 		<br>
 		<h2>About the game</h2>
 		<br>
-		![image](https://user-images.githubusercontent.com/43863985/175398740-fc982e8a-4361-4c80-96b3-878055823cea.png)
+		
 
-		<img src="game-preview-slides.gif" alt="Screenshots">
+		<img src="home screen.PNG" alt="Screenshots">
 		<br>
 		Supported Languages(SL): English, Russian (Русский).<br>
 		Community Supported Languages(CSL): German (Deutsch), Esperanto, French (Français)<br>

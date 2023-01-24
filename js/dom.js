@@ -18,6 +18,7 @@ function setLogin(){
 	reglogin = "login";
 	document.getElementById("emailLine").style.display = "none";
 	document.getElementById("btnRegLogin").innerText   = "Login";
+	// document.getElementById("inp_nickname").value = username;
 };
 function openChat() {
 	var log_dom   = document.getElementById("log");
